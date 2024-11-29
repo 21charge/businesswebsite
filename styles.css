@@ -109,6 +109,21 @@ h3 {
     color:#f0f0f0;
 }
 
+.highlight-primary {
+    color: #ff9478; /* Accent color for brand name or key text */
+    font-weight: bold;
+}
+
+.highlight-secondary {
+    color: #f6e0b2; /* Secondary highlight for enhancing visibility */
+    font-style: italic;
+}
+
+.highlight-tertiary {
+    color: #c6e2ff; /* Tertiary highlight for creative or visionary elements */
+    text-decoration: underline;
+}
+
 /* Highlighted Text */
 .highlight {
     color: #ff9478; /* Accent color */
