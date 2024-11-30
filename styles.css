@@ -336,8 +336,8 @@ h1, h2, h3, p {
 
 /* Mobile Devices (480px - 768px) */
 @media (max-width: 480px) {
-    section{
-        height: 500vh;
+    section {
+        min-height: 100vh; /* Ensures the section is at least the height of the viewport */
     }
     body {
         font-size: 1rem;
@@ -364,5 +364,3 @@ h1, h2, h3, p {
         font-size: 1.5rem;
     }
 }
-
-
