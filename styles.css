@@ -337,7 +337,7 @@ h1, h2, h3, p {
 /* Mobile Devices (480px - 768px) */
 @media (max-width: 480px) {
     section{
-        height: 100vh;
+        height: 200vh;
     }
     body {
         font-size: 1rem;
