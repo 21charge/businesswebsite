@@ -303,6 +303,158 @@ h1, h2, h3, p {
     margin-bottom: 20px;
 }
 
+#testimonial-form {
+    z-index: 10000;
+    background-color: black; /* Beige background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(66, 66, 66, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+#testimonial-form h2 {
+    font-size: 1.8rem;
+    color: #ff9478;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#testimonial-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#testimonial-form input,
+#testimonial-form select,
+#testimonial-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+#testimonial-form textarea {
+    height: 150px;
+}
+
+#testimonial-form button {
+    background-color: #333; /* Black button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+#testimonial-form button:hover {
+    background-color: #555;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff9478;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.floating-button:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); /* Adjust for white icons on dark background */
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 480px) {
+    #testimonial-form {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    #testimonial-form h2 {
+        font-size: 1.5rem;
+    }
+
+    #testimonial-form input,
+    #testimonial-form select,
+    #testimonial-form textarea {
+        font-size: 0.9rem;
+    }
+
+    #testimonial-form button {
+        font-size: 1rem;
+    }
+}
+
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+
 /* Responsive for screens larger than 1200px */
 @media (max-width: 1200px) {
     h1, h2, h3 {
@@ -365,4 +517,6 @@ h1, h2, h3, p {
     .quote {
         font-size: 1.5rem;
     }
+}
+
 }

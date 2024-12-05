@@ -59,3 +59,48 @@ ScrollTrigger.create({
     pin: true, // Pins the section
     scrub: true, // Smoothly scrolls through the pinned section
 });
+
+
+// Initialize EmailJS with your public API key
+emailjs.init("HFrTW31on5VXmTsEX");
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const rating = document.getElementById('rating').value || 'No rating provided';
+
+    const emailParams = {
+        name: name,
+        email: email,
+        message: message,
+        rating: rating
+    };
+
+    emailjs.send('service_1obxdwm', 'template_4clgfc6', emailParams)
+        .then(function(response) {
+            alert("Thank you for your submission!");
+        }, function(error) {
+            alert("There was an issue, please try again.");
+            console.log(error);
+        });
+});
+
+
+
+
+let currentIndex = 0;
+
+function rotateCarousel() {
+    const items = document.querySelectorAll('.carousel-item');
+    const totalItems = items.length;
+
+    currentIndex = (currentIndex + 1) % totalItems;
+
+    const offset = -currentIndex * 100;
+    document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+}
+
+setInterval(rotateCarousel, 3000);

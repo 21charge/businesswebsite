@@ -13,7 +13,7 @@
         <section id="hero">
             <div class="video-background">
                 <video autoplay loop muted playsinline>
-                    <source src="12127539_1440_1440_60fps.mp4" type="video/mp4">
+                    <source src="assets/12127539_1440_1440_60fps.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="hero-content">
@@ -69,16 +69,59 @@
     </div>
 </section>
 
+<br>
+<hr>
+<br>
+
+<section id="testimonial-form">
+    <h2>Submit a Testimonial or Inquiry</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <label for="rating">Star Rating (Optional):</label>
+        <select id="rating" name="rating">
+            <option value="">Select a rating</option>
+            <option value="5">★★★★★</option>
+            <option value="4">★★★★☆</option>
+            <option value="3">★★★☆☆</option>
+            <option value="2">★★☆☆☆</option>
+            <option value="1">★☆☆☆☆</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<br>
+<hr>
+<br>
+<section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="carousel">
+        <div class="carousel-item">"Amazing service!" - ★★★★★</div>
+        <div class="carousel-item">"Highly recommend!" - ★★★★☆</div>
+        <div class="carousel-item">"Professional and efficient." - ★★★★☆</div>
+    </div>
+</section>
+
+
     <br>
     <hr>
     <br>
+    <a href="blog.html" class="floating-button">Want cool stuff? Click here!</a>
 
     <section id="contact-us">
         <div class="contact-info">
             <h2>Contact Us</h2>
-            <p>Email: info@lusibdesigns.com</p>
-            <p>Phone: +1 234 567 890</p>
-            <p>Address: 123 Creative Avenue, Design City, USA</p>
+            <p>Email: 21chargeedits@gmail.com</p>
+            <p>Phone: 0696723768 (Whatsapp only)</p>
         </div>
         <div class="quote-container">
             <blockquote class="quote">
@@ -86,12 +129,30 @@
             </blockquote>
         </div>
     </section>
+
+    <footer>
+        <div class="social-media">
+
+            </a>
+            <a href="https://x.com/LucibStudio" target="_blank" aria-label="Twitter">
+                <img src="assets/logo-white.png" alt="Twitter Logo">
+            </a>
+            <a href="https://www.linkedin.com/in/lucib-studio-ba2241340/" target="_blank" aria-label="LinkedIn">
+                <img src="assets/LI-In-Bug.png" alt="LinkedIn Logo">
+            </a>
+            <!-- Add other platforms as needed -->
+        </div>
+        <p>&copy; 2024 LucibStudio. All rights reserved.</p>
+    </footer>
+    
     
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 
 </body>
 </html>
+
