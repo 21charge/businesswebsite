@@ -167,17 +167,79 @@ footer a {
 }
 
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+@media (min-width: 1024px) {
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 30px;
+        font-size: 1rem;
     }
 
-    .index {
-        order: 2;
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    main {
+        margin: 15px 20px;
+        padding: 25px;
+        font-size: 0.95rem;
     }
 
-    .blog-content {
-        order: 1;
+    h1, h2 {
+        font-size: 1.4rem;
     }
+
+    ul {
+        padding-left: 18px;
+    }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 767px) {
+    header, footer {
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    main {
+        margin: 10px;
+        padding: 20px;
+        font-size: 0.9rem;
+        border-radius: 6px;
+    }
+
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    p, li {
+        font-size: 0.9rem;
+    }
+
+    address {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+
+/* Additional Touch-Ups */
+a {
+    font-size: inherit;
+    word-wrap: break-word;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
