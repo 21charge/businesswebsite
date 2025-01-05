@@ -235,6 +235,9 @@ footer a {
         font-size: 0.9rem;
         line-height: 1.4;
     }
+    .cards{
+    width:100vw
+    }
         .card{
         width: fit-content;
     }
