@@ -226,7 +226,7 @@ footer a {
         justify-content: center; /* Center content vertically */
         align-items: center; /* Center content horizontally */
         text-align: center; /* Center-align text content */
-        width: 100%; /* Take full width of viewport */
+        width: 100vpw; /* Take full width of viewport */
         padding: 20px; /* Add some padding to prevent edges from touching */
         box-sizing: border-box; /* Include padding in width/height */
     }
