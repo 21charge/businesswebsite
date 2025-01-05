@@ -237,6 +237,10 @@ footer a {
         font-size: 0.9rem;
         line-height: 1.4;
     }
+        .card{
+        width: fit-content;
+    }
+}
 }
 
 /* Additional Touch-Ups */
