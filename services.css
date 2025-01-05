@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #222;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #444;
+}
+
+.header-top a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.header-top .new {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.header-bottom {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-bottom ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-bottom li {
+    margin: 0 15px;
+}
+
+.header-bottom a {
+    text-decoration: none;
+    color: #ddd;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header-bottom a:hover {
+    color: #fff;
+}
+
+hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #ccc;
+    height:5px;
+}
+
+.block{
+    padding-top:5vh ;
+    padding-bottom: 5vh;
+    justify-self: center;
+    background-color: #333;
+
+    width: 75vw;
+}
+.content{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    background-color: rgb(91, 91, 91);
+    color: #fff;
+    width: 60vw;
+    justify-self: center;
+}
+/* Webstep Styling */
+.webstep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.step{
+    align-items: center;
+    text-align: center;
+    height: 4vh;
+}
+.webstep ul {
+    width: 75vw;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.webstep li {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    background-color: #ddd;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    height: fit-content;
+    flex: 1;
+    max-width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.webstep li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+/* Arrow Between Steps Styling */
+.arrow svg {
+    fill: #222;
+    border-color: #000;
+    transition: fill 0.3s ease;
+
+}
+
+.webstep li:hover .arrow svg {
+    fill: #000;
+}
+
+
+/* Section Divider */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
