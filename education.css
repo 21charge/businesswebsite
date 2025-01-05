@@ -199,86 +199,42 @@ footer a {
 
 /* Small Screens (Mobile Phones) */
 @media (max-width: 767px) {
-    body {
-        padding: 0; /* Remove potential margin/padding causing overflow */
-        margin: 0;
+    /* Header */
+    .header-top {
+        font-size: 12px; /* Smaller text */
+        padding: 8px;
     }
 
-     footer {
-        text-align: center;
-        padding: 10px 15px;
+    .header-bottom ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center-align items */
     }
 
-    main {
-        display: flex;
-        flex-direction: column; /* Arrange items vertically */
-        justify-content: center; /* Center content vertically */
-        align-items: center; /* Center content horizontally */
-        text-align: center; /* Center-align text content */
-        width: 100vpw; /* Take full width of viewport */
-        padding: 20px; /* Add some padding to prevent edges from touching */
-        box-sizing: border-box; /* Include padding in width/height */
+    .header-bottom li {
+        margin: 5px 0;
     }
 
-    .hero {
-        flex-direction: column; /* Stack items vertically */
-        padding: 20px;
-        text-align: center;
-        height: auto; /* Let the content define the height */
-        width: 100%; /* Full width */
+    /* Content Area */
+    .container {
+        flex-direction: column; /* Stack content */
+        width: 95vw; /* Reduce margin for more space */
     }
 
-    .hero-content {
-        padding: 15px;
+    .index, .blog-content {
+        width: 100%; /* Full width for better readability */
     }
 
-    h1, h2 {
-        font-size: 1.2rem;
-        margin: 10px 0;
+    .index h3, .blog-content h2 {
+        font-size: 1rem; /* Adjust heading sizes */
     }
 
-    p, li {
-        font-size: 0.9rem;
+    .blog-content p {
+        font-size: 0.85rem;
     }
 
-    .cards {
-        display: flex;
-        flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
-        justify-content: center;
-        gap: 10px; /* Add spacing between cards */
-        width: 100%; /* Full width */
+    /* Footer */
+    footer {
+        font-size: 0.85rem;
         padding: 10px;
-        margin: 0 auto; /* Center align the cards container */
-        box-sizing: border-box;
     }
-
-    .card {
-        width: calc(100% - 40px); /* Full width minus padding */
-        max-width: 300px; /* Limit card width */
-        margin: 10px auto; /* Center each card */
-    }
-
-    .hero h1, .hero p {
-        padding: 0 15px; /* Add space inside hero content */
-    }
-
-    address {
-        font-size: 0.9rem;
-        line-height: 1.4;
-    }
-}
-
-
-/* Additional Touch-Ups */
-a {
-    font-size: inherit;
-    word-wrap: break-word;
-}
-
-ul {
-    list-style-type: disc;
-}
-
-ul li {
-    margin-bottom: 10px;
 }
