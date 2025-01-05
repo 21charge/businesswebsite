@@ -202,9 +202,7 @@ footer a {
         font-size: 1.4rem;
     }
 
-    ul {
-        padding-left: 18px;
-    }
+
 }
 
 /* Small Screens (Mobile Phones) */
@@ -225,9 +223,7 @@ footer a {
         font-size: 1.2rem;
     }
 
-    ul {
-        padding-left: 15px;
-    }
+
 
     p, li {
         font-size: 0.9rem;
