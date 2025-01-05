@@ -215,10 +215,14 @@ footer a {
     }
 
     main {
-        margin: 10px;
-        padding: 20px;
-        font-size: 0.9rem;
-        border-radius: 6px;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center-align text content */
+    min-height: 100vh; /* Ensure it takes up the full viewport height */
+    padding: 20px; /* Add some padding to prevent edges from touching */
+    box-sizing: border-box; /* Include padding in height/width calculations */
     }
 
     h1, h2 {
